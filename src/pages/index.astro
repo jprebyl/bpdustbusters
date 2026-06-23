@@ -173,7 +173,14 @@ import Layout from '../layouts/Layout.astro';
           <div class="team-name">Bobby</div>
           <div class="team-role">Co-founder</div>
         </div>
-        <!-- Parker's card goes here once photo is ready -->
+        <div class="team-card">
+          <div class="team-photo">
+            <!-- Replace with: <img src="/photos/parker.jpeg" alt="Parker" /> -->
+            <span class="photo-initial">P</span>
+          </div>
+          <div class="team-name">Parker</div>
+          <div class="team-role">Co-founder</div>
+        </div>
       </div>
     </div>
   </section>
@@ -189,7 +196,8 @@ import Layout from '../layouts/Layout.astro';
     <a href="tel:7857601146" class="contact-phone">(785) 760-1146</a>
     <p class="contact-sub">Call or fill out the form and we'll confirm your appointment within 24 hours.</p>
 
-    <form class="form" action="#" method="post">
+    <form class="form" action="https://formspree.io/f/mwvdpdvv" method="post">
+      <input type="hidden" name="_subject" value="New booking request — BP Dust Busters" />
       <div class="row-2">
         <div class="field">
           <label for="name">Your name</label>
